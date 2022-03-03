@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /*  font-size: calc(10px + 2vmin); */
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.hdnicewallpapers.com/Walls/Big/House%20and%20Bungalow/Luxury_Home_HD_Photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.nav-bar {
+
+  width: 100%;
+  height: 100%;
+  box-shadow: -3px -5px 8px rgb(31 31 31);
+
+}
+
+.img-class img {
+
+  width: 35%;
+
+}
+
+.nav-bar li a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 60px auto;
+  padding: 0px 20px;
+  border-radius: 8px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-flex;
+  gap: 12rem;
+
+}
+
+ul li a {
+  text-decoration: none;
+  position: relative;
+  padding: 15px 10px;
+  display: block;
+
+}
+
+ul li a+a {
+  margin-left: 20px;
+
+}
+
+
+ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #0d5b9b;
+  transform-origin: bottom right;
+  transition: transform 0.8s ease;
+  transform: scaleX(0);
+
+}
+
+ul a:hover {
+  color: black;
+}
+
+ul a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+* {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+
+}
+
+
+/* @media (min-width: 450px) {
+  h1.heading {
+    font-size: 1.75em;
+  }
+}
+
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.25em;
+  }
+}
+
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 4.25em;
+    margin: 0 0 0.5em;
+  }
+} */
+.main-div {
+  margin-top: 740px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.btnfos {
+  color: rgb(245, 245, 245);
+  text-shadow: 0 0 0.2em rgb(3 0 0), 0 0 0.2em;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 68px;
+  max-width: 200px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.btnfos-1 {
+
+  font-weight: 1000;
+}
+
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btnfos-1 rect {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 5;
+  stroke-dasharray: 420, 0;
+}
+
+.btnfos-1:hover {
   color: white;
+  letter-spacing: 1px;
+  font-weight: 900;
+
 }
 
-.App-link {
-  color: #61dafb;
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.populer-div h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 50px !important;
+  color: rgb(245, 245, 245);
+  text-shadow: 0 0 0.2em rgb(3 0 0), 0 0 0.2em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.house-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 70px;
+
+}
+
+.house-1 img {
+
+  width: 30%;
+  height: 30%;
+}
+
+.houses {
+  margin-top: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  flex-direction: column;
+}
+
+.houses-try {
+  background-color: white;
+  width: 20%;
+  height: 45vh;
+  border-radius: 20px;
+  box-shadow: 0rem 0.4rem 0.8rem rgb(31 31 31);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.houses, .houses-try p {
+  font-weight: 800;
+
+}
+
+.houses-try img {
+  width: 100%;
+  height: 50%;
+
+}
+
+.houses-try a {
+  -webkit-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  position: relative;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+}
+
+.houses-try a.button {
+  font-weight: 700;
+  border-radius: 10px;
+  color: black;
+  box-shadow: rgb(0, 0, 0) 0 0 0 2px inset;
+}
+
+.houses-try a.button:hover {
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 0.2em rgb(3 0 0), 0 0 0.2em;
+  box-shadow: rgba(24, 160, 250, 0.7) 0 0px 0px 40px inset;
+}
+
+.populer-div hr {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  margin-top: 100px;
+
 }
