@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  transition: all;
   font-family: "Work Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -16,7 +20,7 @@
   color: white;
   width: 100%;
   height: 100%;
-  background-image: url("https://www.hdnicewallpapers.com/Walls/Big/House%20and%20Bungalow/Luxury_Home_HD_Photo.jpg");
+  background-image: url("https://wallpapercave.com/wp/wp3049324.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,13 +38,16 @@
 
 .img-class img {
 
-  width: 35%;
+  width: 50%;
 
 }
 
 .nav-bar li a {
-  color: rgb(245, 245, 245);
+  background: linear-gradient(10deg, #42302b 46% 20%, #764c36 10% 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
+  text-shadow: 4px 2px 4px rgb(0 0 0 / 20%);
   font-size: 1.5rem;
 }
 
@@ -48,7 +55,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 60px auto;
+
   padding: 0px 20px;
   border-radius: 8px;
 }
@@ -81,7 +88,8 @@ ul li a::after {
   bottom: 0px;
   width: 100%;
   height: 2px;
-  background-color: #0d5b9b;
+  background-color: rgb(170 117 66);
+  ;
   transform-origin: bottom right;
   transition: transform 0.8s ease;
   transform: scaleX(0);
@@ -134,18 +142,20 @@ ul a:hover::after {
   }
 } */
 .main-div {
-  margin-top: 740px;
+  text-shadow: 4px 2px 4px rgb(0 0 0 / 20%);
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
 .btnfos {
-  color: rgb(245, 245, 245);
-  text-shadow: 0 0 0.2em rgb(3 0 0), 0 0 0.2em;
+  background: linear-gradient(10deg, #e4c885 45% 33%, #9d5129 57% 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
   font-size: 40px;
   line-height: 68px;
@@ -159,27 +169,32 @@ ul a:hover::after {
 .btnfos-1 {
 
   font-weight: 1000;
+
 }
 
 .btnfos-1 svg {
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 8px;
+
   width: 100%;
   height: 100%;
 }
 
 .btnfos-1 rect {
   fill: none;
-  stroke: rgb(0, 0, 0);
+  stroke: rgb(170 117 66);
   stroke-width: 5;
   stroke-dasharray: 420, 0;
+
 }
 
 .btnfos-1:hover {
   color: white;
   letter-spacing: 1px;
   font-weight: 900;
+
 
 }
 
@@ -189,6 +204,11 @@ ul a:hover::after {
   stroke-dashoffset: 48;
   -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.populer-div {
+  overflow: hidden;
+  width: 100%;
 }
 
 .populer-div h1 {
@@ -231,7 +251,7 @@ ul a:hover::after {
   width: 20%;
   height: 45vh;
   border-radius: 20px;
-  box-shadow: 0rem 0.4rem 0.8rem rgb(31 31 31);
+  box-shadow: 0rem 1rem 0.8rem rgb(88 88 88 / 20%);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -246,7 +266,8 @@ ul a:hover::after {
 .houses-try img {
   width: 100%;
   height: 50%;
-
+  margin: 15px;
+  border-radius: 20px 20px 0 0;
 }
 
 .houses-try a {
@@ -280,5 +301,123 @@ ul a:hover::after {
   width: 100%;
   background-color: rgb(0, 0, 0);
   margin-top: 100px;
+
+}
+
+
+.under-div {
+
+  margin-top: 50px;
+}
+
+.future {
+  display: flex;
+  gap: 2rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-bottom {
+  color: rgb(134, 134, 134);
+  display: flex;
+  width: 100%;
+  padding-top: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #0a0a0a;
+}
+
+.slogan {
+  font-size: 3.25rem;
+  font-weight: 900;
+  max-width: 49rem;
+  margin-top: 14rem;
+  line-height: 3.375rem;
+  padding-top: 3.875rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(10deg, #e4c885 1% 37%, #9d5129 40% 100%);
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.under-div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30vh;
+  background-image: url(https://wallpapercave.com/wp/wp3049324.jpg);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: white;
+}
+
+.under-div2 h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgb(245, 245, 245);
+  text-shadow: 0 0 0.2em rgb(3 0 0), 0 0 0.2em;
+  text-decoration: none;
+}
+
+.btn {
+  color: rgb(0, 0, 0);
+  background: none;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 10px;
+  transition: 0.9s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1:hover {
+  background-color: rgb(216, 77, 77);
+  border-radius: 50%;
+
+}
+
+.btn2:hover {
+  background-color: #1e90ff;
+  border-radius: 50%;
+}
+
+.btn3:hover {
+  background-color: #25d366;
+  border-radius: 50%;
+}
+
+.btn4:hover {
+  background-color: #3742fa;
+  border-radius: 50%;
+}
+
+.btn5:hover {
+  background-color: #764c36;
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+  ul li {
+    display: flex;
+
+  }
+
+
+
+  .houses-try {
+    min-width: calc(100% / 1) !important;
+    height: 100%;  
+  }
+
 
 }

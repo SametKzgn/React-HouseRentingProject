@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-
+import resim1 from '../img/Artboard 1.png';
 
 export default class Nav extends Component {
     render() {
         return (
             <div className='nav-bar'>
                 <ul>
-                    <a href="" className='img-class'> <img src="https://rtspecialty.com/wp-content/uploads/2021/05/quickhome_PL-688x124.png" alt="" /></a>
-                    <li><a href="#">Houses</a>
-                        <a href="#">Villa</a>
-                        <a href="#">Apartment</a></li>
+                    <a name="up" className='img-class'> <img src={resim1} alt="" /></a>
+                    <li><a href="#more">Houses</a>
+                        <a href="#more">Villa</a>
+                        <a href="#more">Apartment</a>
+                        <a href="#contact">Contact</a></li>
                 </ul>
                   
             </div>

@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Routing from './Routing';
 import Nav from './components/Nav';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Apartment from './components/Apartment';
+import Footer from './components/Footer';
 import Main from './components/Main';
 import Slider from './components/Slider';
-
-
-
 function App() {
   return (
-    <div className="App">
+    <div className="main-container">
       <header className="App-header">
-
         <Nav />
         <Main />
       </header>
-      <Slider />
+      <div>
+        <Slider />
+
+      </div>
+
+      <Footer />
 
     </div>
+
+
+
   );
 }
 
