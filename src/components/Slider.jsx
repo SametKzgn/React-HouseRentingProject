@@ -68,7 +68,7 @@ function Slider() {
 
 
 
-                    {
+        {/*             {
                         sliderItem.map((item, index) => {
                             return(
                                 <div className="houses-try slide" key={index}>
@@ -84,7 +84,7 @@ function Slider() {
                             )
                     })
                 }
-
+ */}
 
                     
                     {/* <div className="houses-try slide">
