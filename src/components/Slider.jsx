@@ -1,5 +1,6 @@
 import React from 'react'
-import { useEffect } from 'react';
+
+import { useEffect,useState } from 'react';
 /* import React, { useState, useEffect } from 'react'; */
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
@@ -7,7 +8,16 @@ function Slider() {
     let slides;
     let itemWidth;
 
-    const scrollStart = (slides) => {
+    const [sliderItem,setSliderItem ] = useState({}); 
+    useEffect (() => {
+    fetch('http://10.80.2.20:8080/api/rents/GetAll')
+    .then(res => res.json())
+    .then(data => {
+        setSliderItem(data)
+    })
+    });
+
+     const scrollStart = (slides) => {
         return slides.scrollLeft === 0;
     }
 
@@ -58,9 +68,12 @@ function Slider() {
 
 
 
-                    <div className="houses-try slide">
+                    {
+                        sliderItem.map((item, index) => {
+                            return(
+                                <div className="houses-try slide" key={index}>
                         
-                        <img src="https://wallpapercave.com/wp/wp8491797.jpg" alt="" />
+                        <img src={item.pictures} alt="" />
 
                         <h3>3 Bedroom House</h3>
                         <h5>Kato Polemidia, Limassol</h5>
@@ -68,9 +81,15 @@ function Slider() {
                         <a href="#" class="button">View Details</a>
 
                     </div>
-                    <div className="houses-try slide">
+                            )
+                    })
+                }
 
-                        <img src="https://media.istockphoto.com/photos/we-all-deserve-a-fresh-break-from-the-city-picture-id1326994520?b=1&k=20&m=1326994520&s=170667a&w=0&h=h9h0d6bcN0Mrr2S7iVzS331BM7U8G3XyCWiVeVjh-AI=" alt="" />
+
+                    
+                    {/* <div className="houses-try slide">
+
+   <img src="https://media.istockphoto.com/photos/we-all-deserve-a-fresh-break-from-the-city-picture-id1326994520?b=1&k=20&m=1326994520&s=170667a&w=0&h=h9h0d6bcN0Mrr2S7iVzS331BM7U8G3XyCWiVeVjh-AI=" alt="" />
 
                         <h3>3 Bedroom House</h3>
                         <h5>Kato Polemidia, Limassol</h5>
@@ -138,7 +157,7 @@ function Slider() {
                         <p>€500</p>
                         <a href="#" class="button">View Details</a>
 
-                    </div>
+                    </div> */}
                 </div>
 
 
